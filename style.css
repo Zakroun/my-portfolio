@@ -1,0 +1,209 @@
+body {
+  background-color: rgb(56, 56, 56);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("bg11.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(4px);
+  z-index: -1;
+}
+header {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 55px;
+  background-color: #0000009e;
+  display: flex;
+  justify-content: space-around;
+}
+#logo {
+  margin-top: -5px;
+  margin-right: -5px;
+  width: 70px;
+  vertical-align: middle;
+}
+#name {
+  font-size: 25px;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+#name2 {
+  font-size: 25px;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(140, 140, 140);
+}
+.links {
+  margin-top: 17px;
+}
+.link {
+  margin-right: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: rgb(140, 140, 140);
+}
+.username {
+  text-align: center;
+  margin-top: 200px;
+  color: white;
+}
+#username {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 60px;
+}
+#hello {
+  color: rgb(140, 140, 140);
+}
+#iconafter {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+#btncontact {
+  background-color: rgba(140, 140, 140, 0.612);
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+  width: 150px;
+  height: 35px;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.about {
+  padding-top: 10px;
+  /* height: 100px; */
+  height: max-content;
+  margin-left: -7px;
+  width: 101.1%;
+  margin-top: 145px;
+  text-align: center;
+  color: white;
+}
+#logoabout {
+  width: 460px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0.5;
+}
+
+#logoabout.animate {
+  animation: lefttrans 2s forwards;
+  opacity: 1; /* Make the logo visible once the animation starts */
+}
+@keyframes lefttrans {
+  0% {
+    margin-left: -200px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.twodives {
+  display: flex;
+  justify-content: center;
+}
+.divabout {
+  text-align: left;
+}
+#h4about {
+  color: black;
+}
+#pabout {
+  width: 320px;
+}
+#h4 {
+  font-size: 16px;
+}
+th,
+td {
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+#Cvbutton {
+  background-color: #000000;
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+#Cvbutton:hover {
+  background-color: transparent;
+  background-image: linear-gradient(to right, black, black, gray);
+}
+
+.skills {
+  padding-top: 10px;
+  /* height: 100px; */
+  height: max-content;
+  margin-left: -7px;
+  width: 101.1%;
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+}
+.divskills {
+  margin-top: 40px;
+  margin-left: 19%;
+  margin-right: 17%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  height: 150px;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(69, 69, 69);
+  opacity: 0; 
+  transition: opacity 1s;
+}
+.skill.animate {
+  animation: 1s skill forwards;
+}
+#imgskill {
+  width: 70px;
+}
+.skill:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+@keyframes skill {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 20px;
+    opacity: 1;
+  }
+}
