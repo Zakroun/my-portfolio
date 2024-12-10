@@ -17,6 +17,7 @@ body::before {
   z-index: -1;
 }
 header {
+  z-index: 1;
   position: fixed;
   width: 100%;
   left: 0px;
@@ -80,7 +81,7 @@ header {
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
 }
-#btncontact {
+#btncontact{
   background-color: rgba(140, 140, 140, 0.612);
   border: 1px solid rgb(140, 140, 140);
   border-radius: 15px;
@@ -163,7 +164,7 @@ td {
   height: max-content;
   margin-left: -7px;
   width: 101.1%;
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center;
   color: white;
 }
@@ -218,8 +219,8 @@ hr{
 }
 .resumdiv{
   display: flex;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #iconresume{
   width: 30px;
@@ -238,11 +239,66 @@ hr{
   text-align: left;
 }
 .part1_2{
-  margin-left: -30px;
+  text-align: left;
 }
 .resumeh3{
   color: rgb(138, 138, 138);
 }
 #year{
   color: rgb(218, 218, 218);
+}
+.part2{
+  text-align: left;
+  max-width: 300px;
+}
+#resumep{
+  margin-left: 20px;
+}
+.Projects{
+  padding-top: 10px;
+  /* height: 100px; */
+  height: max-content;
+  margin-left: -7px;
+  width: 101.1%;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+.containerproject{
+  display: flex;
+}
+.project1{
+  margin-top: 60px;
+  width: 380px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+#imgproject{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#btndemo {
+  background-color: rgba(140, 140, 140, 0.986);
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+  width: 150px;
+  height: 35px;
+  color: white;
+  margin-top: 190px;
+  margin-left: 120px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+}
+
+.project1 {
+  position: relative; 
+}
+
+.project1:hover #btndemo {
+  display: block; 
+  opacity: 1; 
 }
