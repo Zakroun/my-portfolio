@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(56, 56, 56);
+  background-color: RGB(1, 0, 1);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body::before {
@@ -141,7 +141,7 @@ td {
   padding-right: 20px;
 }
 #Cvbutton {
-  background-color: #000000;
+  background-color: rgba(128, 128, 128, 0.463);
   color: white;
   width: 150px;
   border-radius: 10px;
@@ -152,8 +152,9 @@ td {
   cursor: pointer;
 }
 #Cvbutton:hover {
+  color: black;
   background-color: transparent;
-  background-image: linear-gradient(to right, black, black, gray);
+  background-image: linear-gradient(to right, white, gray,gray);
 }
 
 .skills {
@@ -206,4 +207,12 @@ td {
     margin-left: 20px;
     opacity: 1;
   }
+}
+hr{
+  margin-top: -15px;
+  width: 100px;
+  height: 2px;
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(to right,rgb(74, 73, 73),white,rgb(137, 137, 137));
 }
