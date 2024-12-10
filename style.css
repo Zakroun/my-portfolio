@@ -9,7 +9,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("bg11.webp");
+  background-image: url("images/bg11.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +157,7 @@ td {
   background-image: linear-gradient(to right, white, gray,gray);
 }
 
-.skills {
+.skills,.RESUME {
   padding-top: 10px;
   /* height: 100px; */
   height: max-content;
@@ -194,7 +194,7 @@ td {
   width: 70px;
 }
 .skill:hover {
-  border: 2px solid black;
+  border: 2px solid white;
   color: black;
 }
 
@@ -215,4 +215,34 @@ hr{
   border: none;
   background-color: transparent;
   background-image: linear-gradient(to right,rgb(74, 73, 73),white,rgb(137, 137, 137));
+}
+.resumdiv{
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+#iconresume{
+  width: 30px;
+  vertical-align:middle;
+  margin-right: 10px;
+}
+#iconresume2{
+  width: 30px;
+  vertical-align:middle;
+  margin-right: 10px;
+}
+.part1{
+  margin-right: 120px;
+}
+.part1_1{
+  text-align: left;
+}
+.part1_2{
+  margin-left: -30px;
+}
+.resumeh3{
+  color: rgb(138, 138, 138);
+}
+#year{
+  color: rgb(218, 218, 218);
 }
