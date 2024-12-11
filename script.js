@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// if ('scrollRestoration' in history) {
-//   history.scrollRestoration = 'manual';
-// }
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
 document.querySelectorAll('.link, #btncontact').forEach((element) => {
   element.addEventListener('click', (e) => {
