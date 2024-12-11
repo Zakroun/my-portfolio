@@ -81,7 +81,7 @@ header {
   font-size: 50px;
   font-family: "Courier New", Courier, monospace;
 }
-#btncontact{
+#btncontact {
   background-color: rgba(140, 140, 140, 0.612);
   border: 1px solid rgb(140, 140, 140);
   border-radius: 15px;
@@ -92,7 +92,7 @@ header {
   cursor: pointer;
 }
 .about {
-  padding-top: 10px;
+  padding-top: 30px;
   /* height: 100px; */
   height: max-content;
   margin-left: -7px;
@@ -155,11 +155,12 @@ td {
 #Cvbutton:hover {
   color: black;
   background-color: transparent;
-  background-image: linear-gradient(to right, white, gray,gray);
+  background-image: linear-gradient(to right, white, gray, gray, gray);
 }
 
-.skills,.RESUME {
-  padding-top: 10px;
+.skills,
+.RESUME {
+  padding-top: 30px;
   /* height: 100px; */
   height: max-content;
   margin-left: -7px;
@@ -185,7 +186,7 @@ td {
   text-align: center;
   cursor: pointer;
   background-color: rgb(69, 69, 69);
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 1s;
 }
 .skill.animate {
@@ -209,53 +210,58 @@ td {
     opacity: 1;
   }
 }
-hr{
+hr {
   margin-top: -15px;
   width: 100px;
   height: 2px;
   border: none;
   background-color: transparent;
-  background-image: linear-gradient(to right,rgb(74, 73, 73),white,rgb(137, 137, 137));
+  background-image: linear-gradient(
+    to right,
+    rgb(74, 73, 73),
+    white,
+    rgb(137, 137, 137)
+  );
 }
-.resumdiv{
+.resumdiv {
   display: flex;
   margin-left: 20%;
   margin-right: 20%;
 }
-#iconresume{
+#iconresume {
   width: 30px;
-  vertical-align:middle;
+  vertical-align: middle;
   margin-right: 10px;
 }
-#iconresume2{
+#iconresume2 {
   width: 30px;
-  vertical-align:middle;
+  vertical-align: middle;
   margin-right: 10px;
 }
-.part1{
+.part1 {
   margin-right: 120px;
 }
-.part1_1{
+.part1_1 {
   text-align: left;
 }
-.part1_2{
+.part1_2 {
   text-align: left;
 }
-.resumeh3{
+.resumeh3 {
   color: rgb(138, 138, 138);
 }
-#year{
+#year {
   color: rgb(218, 218, 218);
 }
-.part2{
+.part2 {
   text-align: left;
   max-width: 300px;
 }
-#resumep{
+#resumep {
   margin-left: 20px;
 }
-.Projects{
-  padding-top: 10px;
+.Projects {
+  padding-top: 30px;
   /* height: 100px; */
   height: max-content;
   margin-left: -7px;
@@ -264,24 +270,23 @@ hr{
   text-align: center;
   color: white;
 }
-.containerproject{
+.containerproject {
   display: flex;
 }
-.project1{
-  margin-top: 60px;
+.project1 {
+  margin-top: 80px;
   width: 380px;
   border-radius: 10px;
   margin-left: 30px;
 }
-#imgproject{
+#imgproject {
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
 #btndemo {
-  background-color: rgba(140, 140, 140, 0.986);
-  border: 1px solid rgb(140, 140, 140);
+  background-color: rgba(0, 0, 0, 0.986);
   border-radius: 15px;
   width: 150px;
   height: 35px;
@@ -293,12 +298,82 @@ hr{
   position: absolute;
   opacity: 0;
 }
+/* #btndemo{
 
+} */
 .project1 {
-  position: relative; 
+  position: relative;
 }
 
 .project1:hover #btndemo {
-  display: block; 
-  opacity: 1; 
+  display: block;
+  opacity: 1;
+}
+
+#iconbtn {
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.CONATCT {
+  padding-top: 30px;
+  /* height: 100px; */
+  height: max-content;
+  margin-left: -7px;
+  width: 101.1%;
+  margin-top: 120px;
+  text-align: center;
+  color: white;
+}
+.container{
+  margin-left: 30%;
+  margin-top: 50px;
+  text-align: left;
+  display: flex;
+}
+#inout{
+  margin-top: 8px;
+  padding: 10px;
+  outline: none;
+  width: 210px;
+  border-radius: 3px;
+  background-color: rgb(207, 207, 207);
+}
+#send{
+  background-color: rgba(140, 140, 140, 0.612);
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+  width: 110px;
+  height: 30px;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#imgcontact{
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#imfoco{
+  color: gray;
+  margin-left: 60px;
+}
+#socialh3{
+  color: gray;
+}
+#socialbtn{
+  background-color: rgba(140, 140, 140, 0.612);
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
 }

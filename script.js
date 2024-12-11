@@ -78,4 +78,26 @@ document.addEventListener("DOMContentLoaded", function () {
 //   history.scrollRestoration = 'manual';
 // }
 
-document.getElementsByClassName('')
+document.querySelectorAll('.link, #btncontact').forEach((element) => {
+  element.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = e.target.getAttribute('href');
+
+      if (targetId === '#home') {
+          window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth'
+          });
+      } else {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+              });
+          }
+      }
+  });
+});
+
