@@ -101,3 +101,13 @@ document.querySelectorAll('.link, #btncontact').forEach((element) => {
   });
 });
 
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  
+  // Check if the menu is already visible or not
+  if (menu.style.right === '0px') {
+      menu.style.right = '-250px';  // Hide the menu (slide out)
+  } else {
+      menu.style.right = '0px';  // Show the menu (slide in)
+  }
+}
