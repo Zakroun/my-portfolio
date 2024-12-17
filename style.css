@@ -17,7 +17,7 @@ body::before {
   z-index: -1;
 }
 header {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   width: 100%;
   left: 0px;
@@ -49,8 +49,28 @@ header {
   font-style: normal;
   color: rgb(140, 140, 140);
 }
+.menu{
+  display: none;
+  padding-top: 50px;
+  width: 50%;
+  color: white;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #000000a3;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+#menuh1{
+  color: gray;
+}
 .links {
   margin-top: 17px;
+}
+.links2{
+  display: flex;
+  flex-direction: column;
 }
 .link {
   margin-right: 10px;

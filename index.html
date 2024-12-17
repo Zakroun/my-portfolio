@@ -29,8 +29,40 @@
                 <a href="#projects" class="link">PROJECTS</a>
                 <a href="#contact" class="link">CONTACT</a>
             </div>
-            <div class="btn"><button id="buttonmenu">☰ Menu</button></div>
+            <div class="btn"><button id="buttonmenu" onclick="toggleMenu()">☰ Menu</button></div>
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("menu");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+                // document.querySelector('.body').addEventListener('click', function (event) {
+                //     var menu = document.getElementById("menu");
+                //     if (menu.style.display === "block" && !menu.contains(event.target) && event.target !== document.getElementById("menuButton")) {
+                //         menu.style.display = "none";
+                //     }
+                // });
+
+                // document.getElementById("menu").addEventListener('click', function (event) {
+                //     event.stopPropagation();
+                // });
+            </script>
         </header>
+
+        <div class="menu" id="menu">
+            <h1 id="menuh1"> Menu </h1><br>
+            <div class="links2">
+                <a href="#home" class="link">HOME</a><br>
+                <a href="#about" class="link">ABOUT</a><br>
+                <a href="#skills" class="link">SKILLS</a><br>
+                <a href="#resume" class="link">RESUME</a><br>
+                <a href="#projects" class="link">PROJECTS</a><br>
+                <a href="#contact" class="link">CONTACT</a><br>
+            </div>
+        </div>
         <div class="username" id="home">
             <h2 id="hello">Hello I'm</h2>
             <span id="username"></span><span id="iconafter">|</span>
@@ -39,219 +71,226 @@
         </div>
     </div>
     <!--about-->
-    <div class="about" id="about">
-        <h1 id="abouth2">ABOUT ME</h1>
-        <hr>
-        <div class="twodives">
-            <div class="img">
-                <img src="images/zakaria1.png" alt="..." id="logoabout" loading="lazy">
-            </div>
-            <div class="divabout">
-                <h1>Hi there! I'm Zakaryae Rouane</h1>
-                <h3 id="h4about">web developer</h3>
-                <p id="pabout">
-                    As a second-year intern at ISTAG Bab Tizimi in full-stack web development, I have gained practical
-                    experience through a variety of projects. This role has enabled me to apply my technical skills in
-                    real-world scenarios while keeping up with the latest advancements in technology to ensure I am
-                    always learning and adapting to industry trends.
-                </p>
-                <table>
-                    <tr>
-                        <td id="h4">Phone</td>
-                        <td>:</td>
-                        <td> +212 618 382 385 </td>
-                    </tr>
-                    <tr>
-                        <td id="h4">Email</td>
-                        <td>:</td>
-                        <td>zakaryaerouane@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td id="h4">From </td>
-                        <td>:</td>
-                        <td> Meknes/Morocco </td>
-                    </tr>
-                    <tr>
-                        <td id="h4">Language </td>
-                        <td>:</td>
-                        <td>Français Arabe Anglais</td>
-                    </tr>
-                </table>
-                <a href="https://black-kissee-92.tiiny.site/"><button id="Cvbutton">Download CV <img
-                            src="images/download-pdf.png" alt="..." id="iconbtn"></button></a>
-            </div>
-        </div>
-    </div>
-    <!--Skills-->
-    <div class="skills" id="skills">
-        <h1 id="skillsh2">SKILLS</h1>
-        <hr>
-        <div class="divskills">
-            <div class="skill">
-                <img src="images/html-5.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>HTML</h3>
-            </div>
-            <div class="skill">
-                <img src="images/css-3.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>CSS</h3>
-            </div>
-            <div class="skill">
-                <img src="images/java-script.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>JAVA SCRIPT</h3>
-            </div>
-            <div class="skill">
-                <img src="images/php.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>PHP</h3>
-            </div>
-            <div class="skill">
-                <img src="images/mysql-database.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>MY SQL</h3>
-            </div>
-            <div class="skill">
-                <img src="images/physics.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>REACT JS</h3>
-            </div>
-            <div class="skill">
-                <img src="images/python.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>PYTHON</h3>
-            </div>
-            <div class="skill">
-                <img src="images/bootstrap.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>BOOTSTRAP</h3>
-            </div>
-            <div class="skill">
-                <img src="images/github.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>Git Hub</h3>
-            </div>
-            <div class="skill">
-                <img src="images/social.png" alt="skill" id="imgskill" loading="lazy">
-                <h3>GIT</h3>
+    <div class="body">
+        <div class="about" id="about">
+            <h1 id="abouth2">ABOUT ME</h1>
+            <hr>
+            <div class="twodives">
+                <div class="img">
+                    <img src="images/zakaria1.png" alt="..." id="logoabout" loading="lazy">
+                </div>
+                <div class="divabout">
+                    <h1>Hi there! I'm Zakaryae Rouane</h1>
+                    <h3 id="h4about">web developer</h3>
+                    <p id="pabout">
+                        As a second-year intern at ISTAG Bab Tizimi in full-stack web development, I have gained
+                        practical
+                        experience through a variety of projects. This role has enabled me to apply my technical skills
+                        in
+                        real-world scenarios while keeping up with the latest advancements in technology to ensure I am
+                        always learning and adapting to industry trends.
+                    </p>
+                    <table>
+                        <tr>
+                            <td id="h4">Phone</td>
+                            <td>:</td>
+                            <td> +212 618 382 385 </td>
+                        </tr>
+                        <tr>
+                            <td id="h4">Email</td>
+                            <td>:</td>
+                            <td>zakaryaerouane@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td id="h4">From </td>
+                            <td>:</td>
+                            <td> Meknes/Morocco </td>
+                        </tr>
+                        <tr>
+                            <td id="h4">Language </td>
+                            <td>:</td>
+                            <td>Français Arabe Anglais</td>
+                        </tr>
+                    </table>
+                    <a href="https://black-kissee-92.tiiny.site/"><button id="Cvbutton">Download CV <img
+                                src="images/download-pdf.png" alt="..." id="iconbtn"></button></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--RRESUME-->
-    <div class="RESUME" id="resume">
-        <h1 id="skillsh2">RESUME</h1>
-        <hr>
-        <div class="resumdiv">
-            <div class="part1">
-                <div class="part1_1">
-                    <h2><img src="images/graduation-cap.png" alt="graduation-cap" loading="lazy"
-                            id="iconresume">Education</h2>
+        <!--Skills-->
+        <div class="skills" id="skills">
+            <h1 id="skillsh2">SKILLS</h1>
+            <hr>
+            <div class="divskills">
+                <div class="skill">
+                    <img src="images/html-5.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/css-3.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/java-script.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>JAVA SCRIPT</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/php.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/mysql-database.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>MY SQL</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/physics.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>REACT JS</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/python.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>PYTHON</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/bootstrap.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>BOOTSTRAP</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/github.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>Git Hub</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/social.png" alt="skill" id="imgskill" loading="lazy">
+                    <h3>GIT</h3>
+                </div>
+            </div>
+        </div>
+        <!--RRESUME-->
+        <div class="RESUME" id="resume">
+            <h1 id="skillsh2">RESUME</h1>
+            <hr>
+            <div class="resumdiv">
+                <div class="part1">
+                    <div class="part1_1">
+                        <h2><img src="images/graduation-cap.png" alt="graduation-cap" loading="lazy"
+                                id="iconresume">Education</h2>
+                        <ul>
+                            <li class="resumeh3">
+                                <h3>technician specializing in digital <br> development, full stack web option</h3>
+                            </li>
+                            <span id="year">2023-2025</span>
+                            <li class="resumeh3">
+                                <h3>High Scholl Degree</h3>
+                            </li>
+                            <span id="year">2023</span>
+                        </ul>
+                    </div>
+                    <div class="part1_2">
+                        <h2><img src="images/certificate.png" alt="certificate" loading="lazy"
+                                id="iconresume2">Certificates
+                        </h2>
+                        <ul>
+                            <li class="resumeh3">
+                                <h3>Introduction to Python <span id="year">(2024)</span></h3>
+                            </li>
+                            <li class="resumeh3">
+                                <h3>SQL <span id="year">(2024)</span></h3>
+                            </li>
+                            <li class="resumeh3">
+                                <h3>Git and GitHub <span id="year">(2024)</span></h3>
+                            </li>
+                            <li class="resumeh3">
+                                <h3>Advanced Microsoft Excel <span id="year">(2024)</span></h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="part2">
+                    <h2><img src="images/work.png" alt="certificate" loading="lazy" id="iconresume">Experience</h2>
                     <ul>
                         <li class="resumeh3">
-                            <h3>technician specializing in digital <br> development, full stack web option</h3>
+                            <h3>Web Developer</h3>
                         </li>
                         <span id="year">2023-2025</span>
-                        <li class="resumeh3">
-                            <h3>High Scholl Degree</h3>
-                        </li>
-                        <span id="year">2023</span>
                     </ul>
-                </div>
-                <div class="part1_2">
-                    <h2><img src="images/certificate.png" alt="certificate" loading="lazy" id="iconresume2">Certificates
-                    </h2>
+                    <p id="resumep">
+                        Full-Stack Web Development Intern
+                        ISTAG Bab Tizimi — 2023-2025 to Present
+                    </p>
                     <ul>
                         <li class="resumeh3">
-                            <h3>Introduction to Python <span id="year">(2024)</span></h3>
-                        </li>
+                            Contributed to the development of dynamic web applications, leveraging modern front-end and
+                            back-end
+                            technologies to deliver scalable solutions.
+                        </li><br>
                         <li class="resumeh3">
-                            <h3>SQL <span id="year">(2024)</span></h3>
-                        </li>
+                            Gained hands-on experience in designing, implementing, and maintaining web functionalities
+                            in
+                            real-world scenarios.
+                        </li><br>
                         <li class="resumeh3">
-                            <h3>Git and GitHub <span id="year">(2024)</span></h3>
-                        </li>
-                        <li class="resumeh3">
-                            <h3>Advanced Microsoft Excel <span id="year">(2024)</span></h3>
+                            Collaborated with cross-functional teams to troubleshoot and resolve technical issues.
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="part2">
-                <h2><img src="images/work.png" alt="certificate" loading="lazy" id="iconresume">Experience</h2>
-                <ul>
-                    <li class="resumeh3">
-                        <h3>Web Developer</h3>
-                    </li>
-                    <span id="year">2023-2025</span>
-                </ul>
-                <p id="resumep">
-                    Full-Stack Web Development Intern
-                    ISTAG Bab Tizimi — 2023-2025 to Present
-                </p>
-                <ul>
-                    <li class="resumeh3">
-                        Contributed to the development of dynamic web applications, leveraging modern front-end and
-                        back-end
-                        technologies to deliver scalable solutions.
-                    </li><br>
-                    <li class="resumeh3">
-                        Gained hands-on experience in designing, implementing, and maintaining web functionalities in
-                        real-world scenarios.
-                    </li><br>
-                    <li class="resumeh3">
-                        Collaborated with cross-functional teams to troubleshoot and resolve technical issues.
-                    </li>
-                </ul>
+        </div>
+        <!--Projects-->
+        <div class="Projects" id="projects">
+            <h1 id="skillsh2">PROJECTS</h1>
+            <hr>
+            <div class="containerproject">
+                <div class="project1">
+                    <a href="https://3otor-project.vercel.app/" target="_blank"><button id="btndemo">Live Demo<img
+                                src="images/next.png" alt="..." id="iconbtn"></button></a>
+                    <a href="https://3otor-project.vercel.app/" target="_blank"><img src="images/project1.png" alt="..."
+                            id="imgproject"></a>
+                </div>
+                <div class="project1">
+                    <a href="https://gaza-travel.vercel.app/" target="_blank"><button id="btndemo">Live Demo <img
+                                src="images/next.png" alt="..." id="iconbtn"></button></a>
+                    <a href="https://gaza-travel.vercel.app/" target="_blank"><img src="images/project2.png" alt="..."
+                            id="imgproject"></a>
+                </div>
+                <div class="project1">
+                    <a href="https://app-sneakers-sandy.vercel.app/" target="_blank"><button id="btndemo">Live Demo<img
+                                src="images/next.png" alt="..." id="iconbtn"></button></a>
+                    <a href="https://app-sneakers-sandy.vercel.app/" target="_blank"><img src="images/project3.png"
+                            alt="..." id="imgproject"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Projects-->
-    <div class="Projects" id="projects">
-        <h1 id="skillsh2">PROJECTS</h1>
-        <hr>
-        <div class="containerproject">
-            <div class="project1">
-                <a href="https://3otor-project.vercel.app/" target="_blank"><button id="btndemo">Live Demo<img
-                            src="images/next.png" alt="..." id="iconbtn"></button></a>
-                <a href="https://3otor-project.vercel.app/" target="_blank"><img src="images/project1.png" alt="..."
-                        id="imgproject"></a>
-            </div>
-            <div class="project1">
-                <a href="https://gaza-travel.vercel.app/" target="_blank"><button id="btndemo">Live Demo <img
-                            src="images/next.png" alt="..." id="iconbtn"></button></a>
-                <a href="https://gaza-travel.vercel.app/" target="_blank"><img src="images/project2.png" alt="..."
-                        id="imgproject"></a>
-            </div>
-            <div class="project1">
-                <a href="https://app-sneakers-sandy.vercel.app/" target="_blank"><button id="btndemo">Live Demo<img
-                            src="images/next.png" alt="..." id="iconbtn"></button></a>
-                <a href="https://app-sneakers-sandy.vercel.app/" target="_blank"><img src="images/project3.png"
-                        alt="..." id="imgproject"></a>
-            </div>
-        </div>
-    </div>
-    <!--CONATCT-->
-    <div class="CONATCT" id="contact">
-        <h1 id="skillsh2">CONATCT</h1>
-        <hr>
-        <div class="container">
-            <div class="part1">
-                <h2>Contact me</h2>
-                <form action="https://formspree.io/f/xeoqwrrr" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" id="inout"><br>
-                    <input type="email" name="email" placeholder="Your email" id="inout"><br>
-                    <textarea name="message" placeholder="Your message" id="inout"></textarea><br>
-                    <!-- your other form fields go here -->
-                    <button type="submit" id="send">Send</button>
-                </form>
-            </div>
+        <!--CONATCT-->
+        <div class="CONATCT" id="contact">
+            <h1 id="skillsh2">CONATCT</h1>
+            <hr>
+            <div class="container">
+                <div class="part1">
+                    <h2>Contact me</h2>
+                    <form action="https://formspree.io/f/xeoqwrrr" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" id="inout"><br>
+                        <input type="email" name="email" placeholder="Your email" id="inout"><br>
+                        <textarea name="message" placeholder="Your message" id="inout"></textarea><br>
+                        <!-- your other form fields go here -->
+                        <button type="submit" id="send">Send</button>
+                    </form>
+                </div>
 
-            <div class="part2">
-                <h2>Contact info</h2>
-                <img src="images/email.png" alt="..." id="imgcontact"><span>Email</span><br><span
-                    id="imfoco">zakaryaerouane@gmail.com</span><br>
-                <img src="images/phone-call.png" alt="..." id="imgcontact"><span>Phone</span><br><span id="imfoco">+212
-                    618382385</span><br>
-                <img src="images/location.png" alt="..." id="imgcontact"><span>location</span><br><span
-                    id="imfoco">Meknes/Morocco </span><br>
-                <h3 id="socialh3">My social Profils</h3>
-                <a href="https://github.com/Zakroun" target="_blank"><button id="socialbtn"><span><img
-                                src="images/github (1).png" alt="..." id="iconbtn">Git Hub</span></button></a>
-                <a href="https://www.linkedin.com/in/zakaryae-rouane-53086229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-                    target="_blank"><button id="socialbtn"><span><img src="images/message.png" alt="..."
-                                id="iconbtn">Linkdine</span></button></a>
+                <div class="part2">
+                    <h2>Contact info</h2>
+                    <img src="images/email.png" alt="..." id="imgcontact"><span>Email</span><br><span
+                        id="imfoco">zakaryaerouane@gmail.com</span><br>
+                    <img src="images/phone-call.png" alt="..." id="imgcontact"><span>Phone</span><br><span
+                        id="imfoco">+212
+                        618382385</span><br>
+                    <img src="images/location.png" alt="..." id="imgcontact"><span>location</span><br><span
+                        id="imfoco">Meknes/Morocco </span><br>
+                    <h3 id="socialh3">My social Profils</h3>
+                    <a href="https://github.com/Zakroun" target="_blank"><button id="socialbtn"><span><img
+                                    src="images/github (1).png" alt="..." id="iconbtn">Git Hub</span></button></a>
+                    <a href="https://www.linkedin.com/in/zakaryae-rouane-53086229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                        target="_blank"><button id="socialbtn"><span><img src="images/message.png" alt="..."
+                                    id="iconbtn">Linkdine</span></button></a>
+                </div>
             </div>
         </div>
     </div>
