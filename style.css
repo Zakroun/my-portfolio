@@ -49,7 +49,7 @@ header {
   font-style: normal;
   color: rgb(140, 140, 140);
 }
-.menu{
+.menu {
   display: none;
   padding-top: 50px;
   width: 55%;
@@ -62,22 +62,22 @@ header {
   position: fixed;
   z-index: 1;
 }
-#menuh1{
+#menuh1 {
   color: gray;
 }
 .links {
   margin-left: 380px;
   margin-top: 17px;
 }
-.links2{
+.links2 {
   display: flex;
   flex-direction: column;
 }
-.contactmenu{
+.contactmenu {
   margin-left: 5px;
   text-align: left;
 }
-#imfoco2{
+#imfoco2 {
   color: gray;
   margin-left: 5px;
 }
@@ -327,9 +327,7 @@ hr {
   position: absolute;
   opacity: 0;
 }
-/* #btndemo{
 
-} */
 .project1 {
   position: relative;
 }
@@ -356,13 +354,13 @@ hr {
   text-align: center;
   color: white;
 }
-.container{
+.container {
   margin-left: 27%;
   margin-top: 50px;
   text-align: left;
   display: flex;
 }
-#inout{
+#inout {
   margin-top: 8px;
   padding: 10px;
   outline: none;
@@ -371,7 +369,7 @@ hr {
   border-radius: 3px;
   background-color: rgb(207, 207, 207);
 }
-#send{
+#send {
   background-color: rgba(140, 140, 140, 0.612);
   border: 1px solid rgb(140, 140, 140);
   border-radius: 15px;
@@ -382,7 +380,7 @@ hr {
   cursor: pointer;
 }
 
-#imgcontact{
+#imgcontact {
   border-radius: 50%;
   border: 1px solid gray;
   padding: 10px;
@@ -390,14 +388,14 @@ hr {
   margin-right: 10px;
   vertical-align: middle;
 }
-#imfoco{
+#imfoco {
   color: gray;
   margin-left: 60px;
 }
-#socialh3{
+#socialh3 {
   color: gray;
 }
-#socialbtn{
+#socialbtn {
   background-color: rgba(140, 140, 140, 0.612);
   border: 1px solid rgb(140, 140, 140);
   border-radius: 15px;
@@ -407,7 +405,7 @@ hr {
   margin-top: 10px;
   cursor: pointer;
 }
-#buttonmenu{
+#buttonmenu {
   margin-top: 9px;
   margin-right: 55px;
   height: 30px;
@@ -441,60 +439,57 @@ hr {
     justify-content: center;
   }
   .divabout {
-   margin-left: 30px;
+    margin-left: 30px;
   }
-#Cvbutton {
-  margin-left: 70px;
-  margin-top: 30px;
+  #Cvbutton {
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  .divskills {
+    margin-top: 30px;
+    margin-left: 8%;
+  }
+  .skill {
+    width: 110px;
+    margin-left: 10px;
+  }
+  .RESUME {
+    text-align: center;
+  }
+  .resumdiv {
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .part1 {
+    margin-right: 20px;
+  }
+  .containerproject {
+    flex-wrap: wrap;
+  }
+  .project1 {
+    z-index: 2;
+    margin-top: 60px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  #btndemo {
+    display: none !important;
+  }
+  .CONATCT {
+    text-align: center;
+  }
+  .container {
+    margin-left: 20%;
+    flex-wrap: wrap;
+  }
+  #buttonmenu {
+    display: block;
+  }
 }
-.divskills {
-  margin-top: 30px;
-  margin-left: 8%;
-}
-.skill {
-  width: 110px;
-  margin-left: 10px;
-}
-.RESUME {
-  text-align: center;
-}
-.resumdiv {
-  flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 5%;
-}
-.part1 {
-  margin-right: 20px;
-}
-.containerproject {
-  flex-wrap: wrap;
-}
-.project1 {
-  margin-top: 60px;
-  width: 300px;
-  border-radius: 10px;
-  margin-left: 30px;
-}
-#btndemo {
-  margin-top: 150px;
-  margin-left: 80px;
-  display: block;
-  position: absolute;
-  opacity: 1;
-}
-.CONATCT {
-  text-align: center;
-}
-.container {
-  margin-left: 20%;
-  flex-wrap: wrap;
-}
-#buttonmenu{
-  display: block;
-}
-}
-@media (max-width: 800px) {
-  #buttonmenu{
+@media (max-width: 480px) and (max-width: 800px) {
+  #buttonmenu {
     display: block;
   }
   .links {
@@ -525,7 +520,7 @@ hr {
     margin-left: 14%;
   }
 }
-@media (max-width: 540px) and (min-width: 530px) {
+/* @media (max-width: 540px) and (min-width: 530px) {
   body::before {
     content: "";
     position: absolute;
@@ -572,4 +567,4 @@ hr {
     position: absolute;
     opacity: 1;
   }
-}
+} */
