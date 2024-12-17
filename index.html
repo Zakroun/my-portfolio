@@ -39,16 +39,11 @@
                         x.style.display = "block";
                     }
                 }
-                // document.querySelector('.body').addEventListener('click', function (event) {
-                //     var menu = document.getElementById("menu");
-                //     if (menu.style.display === "block" && !menu.contains(event.target) && event.target !== document.getElementById("menuButton")) {
-                //         menu.style.display = "none";
-                //     }
-                // });
+                window.addEventListener("scroll", function () {
+                    var menu = document.getElementById("menu");
+                    menu.style.display = "none";
+                });
 
-                // document.getElementById("menu").addEventListener('click', function (event) {
-                //     event.stopPropagation();
-                // });
             </script>
         </header>
 
@@ -61,6 +56,19 @@
                 <a href="#resume" class="link">RESUME</a><br>
                 <a href="#projects" class="link">PROJECTS</a><br>
                 <a href="#contact" class="link">CONTACT</a><br>
+                <!-- <div class="contactmenu">
+                    <span>Email : </span><br><span id="imfoco2">zakaryaerouane@gmail.com</span><br>
+                    <span>Phone : </span><br><span id="imfoco2">+212
+                        618382385</span><br>
+                    <span>location : </span><br><span id="imfoco2">Meknes/Morocco </span><br>
+                </div> -->
+                <h3 id="socialh3">My social Profils</h3>
+
+                <a href="https://github.com/Zakroun" target="_blank"><button id="socialbtn"><span><img
+                                src="images/github (1).png" alt="..." id="iconbtn">Git Hub</span></button></a>
+                <a href="https://www.linkedin.com/in/zakaryae-rouane-53086229a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                    target="_blank"><button id="socialbtn"><span><img src="images/message.png" alt="..."
+                                id="iconbtn">Linkdine</span></button></a>
             </div>
         </div>
         <div class="username" id="home">

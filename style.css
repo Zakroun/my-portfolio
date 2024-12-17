@@ -52,12 +52,12 @@ header {
 .menu{
   display: none;
   padding-top: 50px;
-  width: 50%;
+  width: 55%;
   color: white;
   top: 0;
   left: 0;
   text-align: center;
-  background-color: #000000a3;
+  background-color: #000000;
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -71,6 +71,14 @@ header {
 .links2{
   display: flex;
   flex-direction: column;
+}
+.contactmenu{
+  margin-left: 5px;
+  text-align: left;
+}
+#imfoco2{
+  color: gray;
+  margin-left: 5px;
 }
 .link {
   margin-right: 10px;
@@ -399,8 +407,8 @@ hr {
   cursor: pointer;
 }
 #buttonmenu{
-  margin-top: 7px;
-  margin-right: 70px;
+  margin-top: 9px;
+  margin-right: 55px;
   height: 30px;
   background-color: gray;
   color: white;
@@ -415,14 +423,14 @@ hr {
   }
   #logo {
     margin-top: -4px;
-    width: 50px;
+    width: 55px;
     vertical-align: middle;
   }
   #name {
-    font-size: 17px;
+    font-size: 19px;
   }
   #name2 {
-    font-size: 17px;
+    font-size: 19px;
   }
   .links {
     display: none;
@@ -474,10 +482,10 @@ hr {
   color: white;
   margin-top: 150px;
   margin-left: 80px;
-  display: none;
+  display: block;
   cursor: pointer;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
 }
 .CONATCT {
   text-align: center;
