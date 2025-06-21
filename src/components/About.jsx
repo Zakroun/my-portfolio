@@ -66,7 +66,7 @@ const About = () => {
           </div>
           
           <motion.a 
-            href="https://black-kissee-92.tiiny.site/"
+            href="https://brown-marcie-22.tiiny.site"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

@@ -75,7 +75,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
         </Link>
       </nav>
       
-      <div className="menu-social">
+      {/* <div className="menu-social">
         <h3>My social profiles</h3>
         <div className="social-buttons">
           <a 
@@ -95,7 +95,7 @@ const Menu = ({ isOpen, toggleMenu }) => {
             <FaLinkedin /> LinkedIn
           </a>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

@@ -62,8 +62,7 @@ const Resume = () => {
               </li>
             </ul>
             <p className="resume-description">
-              Full-Stack Web Development Intern
-              ISTAG Bab Tizimi — 2023-2025 to Present
+              Full-Stack Web Development Intern — 2023-2025
             </p>
             <ul className="resume-details">
               <li>
